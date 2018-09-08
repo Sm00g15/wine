@@ -7,6 +7,60 @@
   height: 80px;
 }
 
+#wineBottles {
+  animation: App-logo-spin infinite 5s linear;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
+}
+
+/* #title {
+  z-index: 1;
+  font-family: "Pacifico", cursive;
+  color: white;
+  font-size: 76px;
+} */
+
+#wineLoad {
+  display: block;
+  text-align: center;
+}
+
+.container {
+  position: relative;
+}
+
+h1 {
+  font-size: 56px;
+  text-shadow: 2px 2px 5px black;
+}
+
+button {
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+}
+.center {
+  position: absolute;
+  left: 0;
+  top: 2%;
+  width: 100%;
+  text-align: center;
+  font-family: "Pacifico", cursive;
+  color: white;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  opacity: 0.75;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  margin: 0;
+}
+
 .App-header {
   background-color: #222;
   height: 150px;
@@ -23,6 +77,10 @@
 }
 
 @keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }

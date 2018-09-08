@@ -1,19 +1,32 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component, Fragment } from "react";
+import { BrowserRouter, Route, Redirect } from "react-router-dom";
+import Home from "./components/Home";
+import "./App.css";
 
 class App extends Component {
+  componentDidMount() {
+    setTimeout(() => this.setState({ loading: false }), 100);
+  }
+
+  state = {
+    loading: true
+  };
   render() {
+    const { loading } = this.state;
+    if (loading) {
+      return (
+        <Fragment>
+          <img id="wineBottles" src="./winebottles.jpg" alt="" />
+          <h1 id="wineLoad">LOADING</h1>
+        </Fragment>
+      );
+    }
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>
+      <BrowserRouter>
+        <Fragment>
+          <Route exact path="/" component={Home} />
+        </Fragment>
+      </BrowserRouter>
     );
   }
 }
