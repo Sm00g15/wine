@@ -5,7 +5,7 @@ import "./App.css";
 
 class App extends Component {
   componentDidMount() {
-    setTimeout(() => this.setState({ loading: false }), 100);
+    setTimeout(() => this.setState({ loading: false }), 2500);
   }
 
   state = {
