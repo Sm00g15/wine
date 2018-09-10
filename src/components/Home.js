@@ -19,17 +19,17 @@ const Home = () => {
         <button>
           <FontAwesomeIcon size="4x" icon="wine-glass-alt" />
           <br />
-          Our Wines
+          <strong>Our Wines</strong>
         </button>
         <button>
           <FontAwesomeIcon size="4x" icon="envelope" />
           <br />
-          About Us
+          <strong>About Us</strong>
         </button>
         <button>
           <FontAwesomeIcon size="4x" icon="book-open" />
           <br />
-          Contact
+          <strong>Contact</strong>
         </button>
       </div>
     </div>
